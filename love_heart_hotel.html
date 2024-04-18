@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Heart Hotel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- desktop header start -->
+    <header class="shadow-sm bg-white">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container justify-content-between">
+                <a class="navbar-brand logo" href="./index.html">
+                    <img src="./assets/images/dev_rising_logo.png" alt="" class="d-inline-block align-text-top">
+                </a>
+                <div class="collapse show navbar-collapse justify-content-end header_navigation"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/images/Phone.svg" alt="phone icon"> 9876543210
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/images/login.svg" alt="login icon"> Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggle_menu b-block d-sm-none">
+                    <i class="fa-solid fa-bars btn"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- desktop header end -->
+    <!-- mobile header start -->
+    <section class="mobile-header shadow-sm d-sm-none bg-white">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-10 p-0">
+                    <div class="left_header_contianer d-flex gap-3">
+                        <div class="back_btn_cont">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="header_content">
+                            <h1 class="hedaing">Treebo Trend Shimla Ayurvedic Retreat
+                            </h1>
+                            <div class="date_container">
+                                <div class="date_box">8 Apr - 19 Apr</div>
+                                <div class="detail_box">2 Rooms, 7 Guests</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="right_icon_box d-flex gap-3">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mobile header end -->
+
+    <section class="p-sm-5 p-3 page_title_container">
+        <div class="container-fluid py-sm-5 py-3">
+            <div class="row justify-content-center">
+                <div class="col-6 text-center banner_content_box">
+                    <h1 class="page_title">Hotel <span class="deco_head">Detail</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner and room detail section start -->
+    <div class="container">
+        <div class="row flex-column-reverse flex-sm-column bg-white mt-sm-5">
+            <div class="col-12 d-md-flex justify-content-between align-items-center p-3">
+                <div class="hotel_detail_container">
+                    <div class="hotel_title mb-2">
+                        <h2>Hotel Love Heart</h2>
+                    </div>
+                    <div class="hotel_location">
+                        <span class="location fs-6"><i class="fa-solid fa-location-dot me-2"></i>752H+VF4, Old Manali,
+                            Manali, Himachal Pradesh 175131</span>
+                        <a href="https://maps.app.goo.gl/4Gv1Eoq1DjPec59H8" class="fs-6 fw-bold">Map View</a>
+                    </div>
+                </div>
+                <div class="hotel_rating_container">
+                    <div class="rating_box d-flex align-items-center gap-3">
+                        <span class="badge bg-primary">4.0 <i class="fa-solid fa-star"></i></span>
+                        <div class="noof_rating">
+                            <span class="d-none d-md-block">Very Good</span>
+                            <a href="#" class="d-block">44 Rating</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- room slider container start -->
+            <div class="row">
+                <div class="col-md-8 p-md-3 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide room_slider_container"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner rounded-3">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/room1/04.png" class="w-100 img-fluid" alt="...">
+                                <div class="carousel-caption d-block">
+                                    <h5>Deluxe Rooms</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/room1/06.png" class="w-100 img-fluid" alt="...">
+                                <div class="carousel-caption d-block">
+                                    <h5>Super Deluxe Rooms</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/room1/02.png" class="w-100 img-fluid" alt="...">
+                                <div class="carousel-caption d-block">
+                                    <h5>Room 3</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="card hotel_form_card">
+                        <div class="card-body">
+                            <div class="badge_container">
+                                <span class="badge text-dark bglightgreen fw-normal rounded-pill">STANDARD</span>
+                                <span class="badge text-dark bglightgreen fw-normal rounded-pill">COUPLE FRIENDLY</span>
+                            </div>
+                            <div class="price_container">
+                                <span class="text-warning fs-6">Non Refundable</span>
+                                <div class="price_cont d-flex gap-3 align-items-center">
+                                    <span class="discount_box text-success fs-6">65% off</span>
+                                    <span class="discounted_price text-decoration-line-through fs-6">₹26,570</span>
+                                    <div class="main_price">
+                                        <h3>₹10,095</h3>
+                                    </div>
+                                </div>
+                                <div class="inc_book_box d-flex align-items-center justify-content-between mt-3">
+                                    <div class="price_note_box">
+                                        <span class="d-block fs-6 mb-2">Incl. tax for 10 nights, 1 guest</span>
+                                        <span class="d-block fs-6 text-danger">Lowest price in last 1 month</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">BOOK NOW</button>
+                                </div>
+                                <div class="py-3 border-bottom">
+                                    <span class="alert alert-warning p-1 fs-6 text-center m-0 d-block" role="alert">
+                                        Login and earn amazing <span class="fw-bold">Rewards</span> on your stay!
+                                    </span>
+                                </div>
+                                <div class="offer_dis mt-3">
+                                    <span class="fs-6 d-block mb-2">Prepaid Discount of ₹203 <span
+                                            class="text-muted">pre-applied <i
+                                                class="fa-solid fa-circle-check text-success"></i></span></span>
+                                    <span class="fs-6 d-block">TPL65 <span class="text-muted">coupon applied <i
+                                                class="fa-solid fa-circle-check text-success"></i></span></span>
+                                </div>
+                            </div>
+                            <form action="#" class="check_avail_form mt-2">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="my-2">
+                                            <label for="check_in" class="form-label mb-1 fs-6">Check-in:</label>
+                                            <input type="date" class="form-control" id="check_in" name="check_in_date">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="my-2">
+                                            <label for="check_out" class="form-label mb-1 fs-6">Check-out:</label>
+                                            <input type="date" class="form-control" id="check_out"
+                                                name="check_out_date">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="my-2">
+                                            <label for="adults" class="form-label mb-1 fs-6">Adults:</label>
+                                            <select name="adults" id="adults" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="my-2">
+                                            <label for="kids" class="form-label mb-1 fs-6">Kids:</label>
+                                            <select name="kids" id="kids" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button class="btn btn_bgfill w-100 mt-2">Check Availability</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- room slider container end -->
+        </div>
+    </div>
+    <!-- banner and room detail section end -->
+    <!-- amenities section start -->
+    <section class="amenities_container bg-white mt-2 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_heading">
+                        <h2>Amenities</h2>
+                    </div>
+                </div>
+                <!-- amenitites container start -->
+                <div
+                    class="col-12 d-flex align-items-center justify-content-between justify-content-sm-start gap-md-5 flex-wrap">
+                    <div class="amenitites_box flex-column flex-sm-row">
+                        <span class="amenities_icon"><i class="fa-solid fa-wifi"></i></span>
+                        <span class="amenities_title">Free Wifi</span>
+                    </div>
+                    <div class="amenitites_box flex-column flex-sm-row">
+                        <span class="amenities_icon"><i class="fa-solid fa-mug-hot"></i></span>
+                        <span class="amenities_title">Restaurant</span>
+                    </div>
+                    <div class="amenitites_box flex-column flex-sm-row">
+                        <span class="amenities_icon"><i class="fa-solid fa-square-parking"></i></span>
+                        <span class="amenities_title">Limited Parking</span>
+                    </div>
+                    <div class="amenitites_box flex-column flex-sm-row">
+                        <span class="amenities_icon"><i class="fa-solid fa-taxi"></i></span>
+                        <span class="amenities_title">Cab Service</span>
+                    </div>
+                </div>
+                <!-- amenitites container end -->
+
+            </div>
+        </div>
+    </section>
+    <!-- amenities section end -->
+    <!-- hotel about section start -->
+    <section class="hotel_about_container bg-white mt-2 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_heading">
+                        <h2>About the Hotel</h2>
+                    </div>
+                </div>
+                <!-- about description start -->
+                <div class="col-12">
+                    <div class="about_list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="list_cont">
+                                    <span class="list-icon"><i class="fa-regular fa-circle-check"></i></span>
+                                    <span class="list_text">Brand New B&B with 3 star quality rooms and
+                                        facilities.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_cont">
+                                    <span class="list-icon"><i class="fa-regular fa-circle-check"></i></span>
+                                    <span class="list_text">Small Garden along with an attached Apple Orchard.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_cont">
+                                    <span class="list-icon"><i class="fa-regular fa-circle-check"></i></span>
+                                    <span class="list_text">Luxurious rooms with Mountain View AND Balcony.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="about_desc_box row">
+                            <p class="col-12">Welcome to Hotel Love Heart, sheltered in the serene beauty of Manali, Himachal Pradesh.
+
+                                Located on Club House Manu Temple Road, just 900 m from Hadimba Devi Temple and 1.5 Kms from Mall Road, Old Manali, our hotel offers a tranquil retreat amidst the breathtaking
+                                landscapes of the Himalayas. Whether you're seeking adventure in the great outdoors or a
+                                peaceful escape from the hustle and bustle of city life, our prime location provides the
+                                perfect base for exploring all that this enchanting region has to offer.
+
+                                At Hotel Love Heart, we pride ourselves on offering more than just accommodation – we
+                                offer an experience. Our cozy rooms and suites are designed to provide the utmost
+                                comfort, with modern amenities and stunning views of the surrounding mountains.
+
+                                Indulge in the flavors of Himachali cuisine at our onsite restaurant, where every dish
+                                is crafted with care using locally sourced ingredients. After a day of exploring, unwind
+                                with a soothing massage at our spa, or simply relax by the fireplace with a book from
+                                our library.
+
+                                For those seeking adventure, our knowledgeable staff can assist you in planning a
+                                variety of outdoor activities, from trekking and mountain biking to river rafting and
+                                paragliding. And with the vibrant markets and cultural attractions of Old Manali just a
+                                stone's throw away, there's always something new to discover.
+
+                                Whether you're here for a weekend getaway, a family vacation, or a romantic escape,
+                                Hotel Love Heart is your home away from home in the heart of the Himalayas. We look
+                                forward to welcoming you to our slice of paradise and helping you create memories that
+                                will last a lifetime.</p>
+                        </div>
+                        <div class="readmore_link">
+                            <button class="rm_link_btn rm_about_btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- about description end -->
+            </div>
+        </div>
+    </section>
+    <!-- hotel about section end -->
+    <!-- selcted room card section start -->
+    <section class="room_type_container bg-white mt-2 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_heading">
+                        <h2>Room Type</h2>
+                    </div>
+                </div>
+                <!-- amenitites container start -->
+                <div class="col-12">
+                    <!-- room card 1 start -->
+                    <div class="card rounded-3 mb-3 room_card">
+                        <div class="card-body p-0">
+                            <div class="row gx-0">
+                                <div class="col-sm-4 ps-sm-3 my-sm-3 d-flex gap-3 flex-column flex-md-row border-end">
+                                    <div class="row flex-column flex-sm-row">
+                                        <div class="room_images col-md-6">
+                                            <div id="carouselExampleAutoplaying" class="carousel slide"
+                                                data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="./assets/images/room1.jpeg" class="d-block w-100"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/images/hotel1.jpg" class="d-block w-100"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/images/hotel2.jpg" class="d-block w-100"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-6 room_type_details d-flex flex-column gap-2 py-3">
+                                            <div class="room_type_name px-3 px-sm-0">
+                                                <h5>Deluxe Rooms</h5>
+                                            </div>
+                                            <div
+                                                class="room_inclusions_cont d-flex align-items-center gap-3 px-3 px-sm-0">
+                                                <div class="inc_box d-flex align-items-center gap-2">
+                                                    <div class="inc_icon">
+                                                        <i class="fa-regular fa-building"></i>
+                                                    </div>
+                                                    <div class="inc_title">
+                                                        <span class="sq_feet">180 sq.ft.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="inc_box d-flex align-items-center gap-2">
+                                                    <div class="inc_icon">
+                                                        <i class="fa-solid fa-bed"></i>
+                                                    </div>
+                                                    <div class="inc_title">
+                                                        <span class="sq_feet">King Bed</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="add_service d-flex align-items-center justify-content-between d-sm-block px-3 px-sm-0">
+                                                <span class="badge bglightyellow text-dark rounded-pill">Free Breakfast
+                                                    <i class="fa-solid fa-circle-check ms-2"></i>
+                                                </span>
+                                                <span class="rm_link_btn d-sm-none">2 Amenities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 p-3 d-none d-md-block">
+                                    <!-- amenitites container start -->
+                                    <div
+                                        class="col-12 d-flex align-items-center justify-content-between justify-content-sm-start gap-md-4 flex-wrap">
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i class="fa-solid fa-wifi"></i></span>
+                                            <span class="amenities_title">Free Wifi</span>
+                                        </div>
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i class="fa-solid fa-mug-hot"></i></span>
+                                            <span class="amenities_title">Restaurant</span>
+                                        </div>
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i
+                                                    class="fa-solid fa-square-parking"></i></span>
+                                            <span class="amenities_title">Limited Parking</span>
+                                        </div>
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i class="fa-solid fa-taxi"></i></span>
+                                            <span class="amenities_title">Cab Service</span>
+                                        </div>
+                                    </div>
+                                    <!-- amenitites container end -->
+                                </div>
+                                <div class="col-sm-4 bglightgreen">
+                                    <div
+                                        class="room_pricing_copntainer d-flex flex-sm-column flex-row gap-2 py-2 px-3 px-sm-0 text-sm-center justify-content-between justify-content-center">
+                                        <div class="refund_text d-none d-sm-block">
+                                            <span class="text-warning fs-6">Non Refundable</span>
+                                        </div>
+                                        <div class="price_cont text-muted">
+                                            <h3>₹10,095</h3>
+                                            <span class="d-block fs-6">Incl. tax for 10 nights, 1 guest</span>
+                                        </div>
+                                        <div class="room_selected">
+                                            <div class="selected_msg">
+                                                <span class="selected_msg_titlr fs-6 fw-sm-bold">1 room selected <i
+                                                        class="fa-solid fa-circle-check text-success"></i></span>
+                                            </div>
+                                            <button class="btn btn-outline mt-2 px-2 px-sm-3">Select
+                                                Room</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- room card 2 start -->
+                    <div class="card rounded-3 mb-3 room_card">
+                        <div class="card-body p-0">
+                            <div class="row gx-0">
+                                <div class="col-sm-4 ps-sm-3 my-sm-3 d-flex gap-3 flex-column flex-md-row border-end">
+                                    <div class="row flex-column flex-sm-row">
+                                        <div class="room_images col-md-6">
+                                            <div id="carouselExampleAutoplaying" class="carousel slide"
+                                                data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active" data-bs-interval="1500">
+                                                        <img src="./assets/images/room1.jpeg" class="d-block w-100"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/images/hotel1.jpg" class="d-block w-100"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/images/hotel2.jpg" class="d-block w-100"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-6 room_type_details d-flex flex-column gap-2 py-3">
+                                            <div class="room_type_name px-3 px-sm-0">
+                                                <h5>Super Deluxe Rooms</h5>
+                                            </div>
+                                            <div
+                                                class="room_inclusions_cont d-flex align-items-center gap-3 px-3 px-sm-0">
+                                                <div class="inc_box d-flex align-items-center gap-2">
+                                                    <div class="inc_icon">
+                                                        <i class="fa-regular fa-building"></i>
+                                                    </div>
+                                                    <div class="inc_title">
+                                                        <span class="sq_feet">180 sq.ft.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="inc_box d-flex align-items-center gap-2">
+                                                    <div class="inc_icon">
+                                                        <i class="fa-solid fa-bed"></i>
+                                                    </div>
+                                                    <div class="inc_title">
+                                                        <span class="sq_feet">King Bed</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="add_service d-flex align-items-center justify-content-between d-sm-block px-3 px-sm-0">
+                                                <span class="badge bglightyellow text-dark rounded-pill">Free Breakfast
+                                                    <i class="fa-solid fa-circle-check ms-2"></i>
+                                                </span>
+                                                <span class="rm_link_btn d-sm-none">2 Amenities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 p-3 d-none d-md-block">
+                                    <!-- amenitites container start -->
+                                    <div
+                                        class="col-12 d-flex align-items-center justify-content-between justify-content-sm-start gap-md-4 flex-wrap">
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i class="fa-solid fa-wifi"></i></span>
+                                            <span class="amenities_title">Free Wifi</span>
+                                        </div>
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i class="fa-solid fa-mug-hot"></i></span>
+                                            <span class="amenities_title">Restaurant</span>
+                                        </div>
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i
+                                                    class="fa-solid fa-square-parking"></i></span>
+                                            <span class="amenities_title">Limited Parking</span>
+                                        </div>
+                                        <div class="amenitites_box flex-column flex-sm-row">
+                                            <span class="amenities_icon"><i class="fa-solid fa-taxi"></i></span>
+                                            <span class="amenities_title">Cab Service</span>
+                                        </div>
+                                    </div>
+                                    <!-- amenitites container end -->
+                                </div>
+                                <div class="col-sm-4 bg-light">
+                                    <div
+                                        class="room_pricing_copntainer d-flex flex-sm-column flex-row gap-2 py-2 px-3 px-sm-0 text-sm-center justify-content-between justify-content-center">
+                                        <div class="refund_text d-none d-sm-block">
+                                            <span class="text-warning fs-6">Non Refundable</span>
+                                        </div>
+                                        <div class="price_cont text-muted">
+                                            <h3>₹10,095</h3>
+                                            <span class="d-block fs-6">Incl. tax for 10 nights, 1 guest</span>
+                                        </div>
+                                        <div class="room_selected">
+                                            <div class="selected_msg">
+                                                <span class="selected_msg_titlr fs-6 fw-sm-bold">1 room selected <i
+                                                        class="fa-solid fa-circle-check text-success"></i></span>
+                                            </div>
+                                            <button class="btn btn-outline mt-2 px-2 px-sm-3">Select
+                                                Room</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- amenitites container end -->
+
+            </div>
+        </div>
+    </section>
+    <!-- selcted room card section end -->
+    <!--location section start -->
+    <section class="location_main_container bg-white mt-2 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_heading">
+                        <h2>Location</h2>
+                        <span class="d-block text-muted mb-2">752H+VF4, Old Manali, Manali, Himachal Pradesh
+                            175131</span>
+                    </div>
+                </div>
+                <!-- map container start -->
+                <div class="col-12">
+                    <div class="map_contianer">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.220378052815!2d77.17613647612069!3d32.25215231062315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904870077589b9b%3A0xaa4cd80bb7d6f127!2sDev%20Rising%20Love%20Heart%20%26%20Resort%20Ltd!5e0!3m2!1sen!2sin!4v1713240877879!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+                    </div>
+                </div>
+                <!-- location container end -->
+
+            </div>
+        </div>
+    </section>
+    <!-- location section end -->
+    <!--rules and policy section start -->
+    <section class="rulepol_main_container bg-white mt-2 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_heading">
+                        <h2>Rules & Policies</h2>
+                    </div>
+                </div>
+                <!-- policy container start -->
+                <div class="col-12">
+                    <div class="rule_policy_contianer row gap-3 gap-md-0">
+                        <div class="col-sm-4">
+                            <div class="policy_box">
+                                <div class="policy_ich_box d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <h6 class="policy_title">Check-in and Check-out</h6>
+                                </div>
+                                <span class="policy_dsc text-muted fs-6">Check-in: 02:00 pm Check-out: 12:00 pm</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="policy_box">
+                                <div class="policy_ich_box d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <h6 class="policy_title">Couple Friendly</h6>
+                                </div>
+                                <span class="policy_dsc text-muted fs-6">This hotel welcomes unmarried couples</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="policy_box">
+                                <div class="policy_ich_box d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-file-circle-xmark"></i>
+                                    <h6 class="policy_title">Cancellation Policy</h6>
+                                </div>
+                                <span class="policy_dsc text-muted fs-6 bglightgreen p-2 rounded">Free cancellation 24
+                                    hrs before check-in</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- policy container end -->
+            </div>
+        </div>
+    </section>
+    <!-- rules and policy section end -->
+    <!--similar hotel section start -->
+    <section class="sim_hotel_main_container bg-white mt-2 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_heading">
+                        <h2>Other Hotels</h2>
+                    </div>
+                </div>
+                <!-- hotel container start -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-4 col-lg-3 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="hotel_img_cont mb-3">
+                                        <img src="./assets/images/hans/hotel_hans.jpeg" alt="hotel hans" class="img-fluid rounded">
+                                    </div>
+                                    <div class="hotel_details_cont">
+                                        <h6 class="hotel_name">Hotel Hans</h6>
+                                        <span class="hotel_loc fs-6">Hotel Hans, Across Victory Tunnel, Circular Road,
+                                            Shimla, Himachal Pradesh 171002</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg-3 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="hotel_img_cont mb-3">
+                                        <img src="./assets/images/hotel_nissar/room4.webp" alt="hotel nissar" class="img-fluid rounded">
+                                    </div>
+                                    <div class="hotel_details_cont">
+                                        <h6 class="hotel_name">Hotel Nissar</h6>
+                                        <span class="hotel_loc fs-6">Khayam, Dalgate Bridge, Near Khyber Hospital,
+                                            Chinar Bagh, Srinagar, Jammu and Kashmir 190001</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hotel container end -->
+            </div>
+        </div>
+    </section>
+    <!-- similar hotel section end -->
+
+    <!-- main footer section start -->
+    <footer class="main_footer mt-5">
+        <div class="container">
+            <div class="row flex-column align-content-center">
+                <a class="footer_logo mx-auto" href="./index.html">
+                    <img src="./assets/images/dev_rising_whitelogo.png" alt="" class="d-inline-block align-text-top">
+                </a>
+                <div class="hotel_detail_cont">
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#">info@devrising.com</a>
+                        <a href="#">9876543210</a>
+                    </div>
+                    <div class="address_container">
+                        <span class="address_box">
+                            Dev Rising Hotels And Resorts Pvt Ltd Hotel Hans, Near Victory Tunnel, Circular Road,
+                            Shimla, Himachal Pradesh 171003
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_navigation">
+                <nav class="navbar navbar-expand-lg justify-content-center">
+                    <ul class="navbar-nav list-unstyled ">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Terms & Condition</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copy_right_cont text-center">
+                <span class="copy_text">Copyright © 2024 All Rights Reserved. <span class="d-block">Design by <a
+                            href="#" class="company_link">EligoCS</a></span></span>
+            </div>
+        </div>
+    </footer>
+    <!-- main footer section end -->
+    <!-- footer price section start -->
+    <section class="footer_price bg-dark text-white py-3 position-sticky bottom-0 d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 d-sm-block d-none">
+                    <div class="footer_details_Cont row">
+                        <div class="footer_deta_box col-3">
+                            <span class="d-block fs-6">Chek-in</span>
+                            <h5 class="d-block">Web, 10 Apr</h5>
+                        </div>
+                        <div class="footer_deta_box col-3">
+                            <span class="d-block fs-6">Chek-out</span>
+                            <h5 class="d-block">Fri, 19 Apr</h5>
+                        </div>
+                        <div class="footer_deta_box col-3">
+                            <span class="d-block fs-6">Rooms & Guests</span>
+                            <h5 class="d-block">1 room, 1 Adult</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 d-block d-sm-flex align-items-center justify-content-between">
+                    <div class="offer_applied d-flex align-items-center justify-content-between mb-3">
+                        <span class="book_for fs-6 d-block d-sm-none"><span class="fw-bold">Total </span>(incl tax) for
+                            8 nights, 1 guest</span>
+                        <span class="fw-sm-bold">2 offers applied <i class="fa-solid fa-angle-up"></i></span>
+                    </div>
+                    <div class="pay_buttons_container d-flex align-items-center gap-3">
+                        <button class="pay_later btn btn-outline-primary d-flex align-items-center gap-3 d-sm-none">
+                            <span class="price_cont text-white text-start"><span
+                                    class="text-decoration-line-through fs-6">₹23,635</span><span class="mainprice">
+                                    <h5>₹8,272</h5>
+                                </span></span>
+                            <div class="btn_text fw-bold text-white">PAY LATER</div>
+                        </button>
+                        <button class="pay_later btn btn-primary d-flex align-items-center gap-3">
+                            <span class="price_cont text-white text-start"><span
+                                    class="text-decoration-line-through fs-6">₹23,635</span><span class="mainprice">
+                                    <h5>₹8,088</h5>
+                                </span></span>
+                            <div class="btn_text fw-bold text-white">BOOK NOW</div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer price section end -->
+
+    <!-- book now modal start -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <form action="#">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Book Room Now</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group col-sm-6 mb-2">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group col-sm-6 mb-2">
+                                <label for="phone_no">Phone no:</label>
+                                <input type="number" class="form-control" id="phone_no">
+                            </div>
+                            <div class="form-group col-sm-6 mb-2">
+                                <label for="check_in">Check-in:</label>
+                                <input type="date" class="form-control" id="check_in">
+                            </div>
+                            <div class="form-group col-sm-6 mb-2">
+                                <label for="check_out">Check-out:</label>
+                                <input type="date" class="form-control" id="check_out">
+                            </div>
+                            <div class="form-group col-sm-6 mb-2">
+                                <label for="adults">Adults:</label>
+                                <input type="number" class="form-control" id="adults">
+                            </div>
+                            <div class="form-group col-sm-6 mb-2">
+                                <label for="kids">Kids:</label>
+                                <input type="number" class="form-control" id="kids">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="rooms">Rooms:</label>
+                                <input type="number" class="form-control" id="rooms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                        <button type="button" class="btn btn-sm px-2 px-sm-3 py-2 py-sm-2 btn_bgfill">Book Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- book now modal end -->
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $(".toggle_menu ").click(function () {
+            $(".header_navigation").toggle();
+        });
+
+        $(".about_desc_box").hide();
+        $(".rm_about_btn").click(function () {
+            $(".about_desc_box").toggle();
+
+            if ($(this).text() === "Read More") {
+                $(this).text("Read Less");
+            } else {
+                $(this).text("Read More");
+            }
+        });
+
+    });
+</script>
+
+</html>

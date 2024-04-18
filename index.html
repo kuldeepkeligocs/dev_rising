@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Rising - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- desktop header start -->
+    <header class="shadow-sm bg-white">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container justify-content-between">
+                <a class="navbar-brand logo" href="./index.html">
+                    <img src="./assets/images/dev_rising_logo.png" alt="" class="d-inline-block align-text-top">
+                </a>
+                <div class="collapse show navbar-collapse justify-content-end header_navigation"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/images/Phone.svg" alt="phone icon"> 9876543210
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/images/login.svg" alt="login icon"> Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggle_menu b-block d-sm-none">
+                    <i class="fa-solid fa-bars btn"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- desktop header end -->
+
+    <!-- banner section start -->
+    <section class="banner">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div
+                    class="banner_content_box w-auto text-center d-flex flex-column justify-content-center align-items-center">
+                    <h1>Discover A Brand <span class="deco_head">Luxurious</span> <span class="d-block">Hotel</span>
+                    </h1>
+                    <button class="btn btn-transp">Book A Room</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner form start -->
+    <section class="banner_form">
+        <div class="container bg-light">
+            <div class="row align-items-end">
+                <div class="col-lg-2 mb-2">
+                    <div class="field_cont">
+                        <label for="select_hotel" class="form-label mb-1 fs-6 text-dark">Select Hotel:</label>
+                        <select name="select_hotel" id="select_hotel" class="form-control">
+                            <option value="dev_rising_hotel">Dev Rising Hotel</option>
+                            <option value="hans_hotel">Hans Hotel</option>
+                            <option value="hotel_nissar">Hotel Nissar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <div class="field_cont">
+                        <label for="check_in" class="form-label mb-1 fs-6 text-dark">Check-in:</label>
+                        <input type="date" class="form-control" id="check_in" name="check_in_date">
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <div class="field_cont">
+                        <label for="check_out" class="form-label mb-1 fs-6 text-dark">Check-out:</label>
+                        <input type="date" class="form-control" id="check_out" name="check_out_date">
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 guset_cont position-relative">
+                    <div class="field_cont">
+                        <label for="select_guset" class="form-label mb-1 fs-6 text-dark">Adults & Room:</label>
+                        <select name="select_guset" id="select_guset" class="form-control">
+                            <option value="1adult_kids_rooms">1 Adults, 1 Kids, 1 Rooms</option>
+                            <option value="2adult_kids_rooms">2 Adults, 2 Kids, 2 Rooms</option>
+                            <option value="3adult_kids_rooms">3 Adults, 3 Kids, 3 Rooms</option>
+                            <option value="custom_choose">Custom choose</option>
+                        </select>
+                    </div>
+                    <div class="addition_guest_container">
+                        <div class="addition_guset_list">
+                            <ul class="guest_list list-unstyled">
+                                <li class="guest_option">
+                                    <div class="row align-items-center">
+                                        <div class="form-group col-sm-2 ps-2 pe-0">
+                                            <label for="name" class="fw-bold fs-6">Room <span
+                                                    class="room_counter">1</span></label>
+                                        </div>
+                                        <div class="form-group col-sm-4 px-2 mb-2">
+                                            <label for="adults" class="fw-bold fs-6">Adults:</label>
+                                            <input type="number" class="form-control" id="adults">
+                                        </div>
+                                        <div class="form-group col-sm-4 px-2 mb-2">
+                                            <label for="kids" class="fw-bold fs-6">Kids:</label>
+                                            <input type="number" class="form-control" id="kids">
+                                        </div>
+                                        <div class="col-sm-2 p-0 guset_btn_box">
+                                            <span class="kids_age_note fs-6">(2-8 years)</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="row add_btn_cont mt-3">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-outline w-100 add_room">Add Room</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-sm btn_bgfill w-100">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <button class="btn btn_bgfill w-100">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner form end -->
+    <!-- banner section end -->
+
+    <!-- about section start -->
+    <section class="about_us_sec py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 py-sm-5 py-3 d-flex flex-column gap-3">
+                    <div class="section_head_cont">
+                        <span class="sec_sub_title">ABOUT US</span>
+                        <h2 class="sec_title">Welcome to <span class="deco_head">DEV RISING</span></h2>
+                    </div>
+                    <div class="about_dsc">
+                        <p>Experience our hotels in Manali, Shimla, and Srinagar's Dal Lake, since 2019. Hosting 30,000+
+                            guests from 50 nations, we offer modern comforts amidst breathtaking landscapes. Enjoy
+                            exquisite dining, spa indulgence, and personalized service for an unforgettable Himalayan
+                            retreat.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 mb-3 mb-sm-0 about_counter_card">
+                            <div class="border p-1">
+                                <div
+                                    class="border text-center p-4 d-flex flex-column justify-content-center align-items-center gap-2">
+                                    <img src="./assets/images/hotels.svg" alt="hotel icon">
+                                    <h2 class="counter">3</h2>
+                                    <p class="mb-0">Hotels</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mb-3 mb-sm-0 about_counter_card">
+                            <div class="border p-1">
+                                <div
+                                    class="border text-center p-4 d-flex flex-column justify-content-center align-items-center gap-2">
+                                    <img src="./assets/images/Staff setting.svg" alt="staff icon">
+                                    <h2 class="counter">1250</h2>
+                                    <p class="mb-0">Staff</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mb-3 mb-sm-0 about_counter_card">
+                            <div class="border p-1">
+                                <div
+                                    class="border text-center p-4 d-flex flex-column justify-content-center align-items-center gap-2">
+                                    <img src="./assets/images/Users.svg" alt="staff icon">
+                                    <h2 class="counter">30K+</h2>
+                                    <p class="mb-0">Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-100" src="./assets/images/room4/08.jpg">
+                        </div>
+                        <div class="col-6 text-start d-flex align-items-end">
+                            <img class="img-fluid w-75" src="./assets/images/room4/02.jpg">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-75" src="./assets/images/room4/03.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-100" src="./assets/images/room4/04.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+    <!-- our hotels section start -->
+    <section class="our_hotels_sec py-5">
+        <div class="container">
+            <div class="row">
+                <div class="section_head_cont">
+                    <span class="sec_sub_title">OUR HOTELS</span>
+                    <h2 class="sec_title">Discover Our <span class="deco_head">HOSPITALITY</span></h2>
+                </div>
+            </div>
+            <div class="row justify-content-center gap-md-5 gap-3 py-5">
+                <!-- hotel card 1 -->
+                <div class="card hotel_card rounded-0 p-0">
+                    <img src="./assets/images/fasade/02.jpg" class="card-img-top rounded-0 hotel_img" alt="...">
+                    <div class="card-body">
+                        <a href="./love_heart_hotel.html">
+                            <h5 class="card-title">Hotel Love Heart</h5>
+                        </a>
+                        <p class="card-text">752H+VF4, Old Manali, Manali, Himachal Pradesh 175131</p>
+                        <div class="rating_visit_box d-flex justify-content-between border-top">
+                            <div class="ratvis_box border-end">
+                                <h6>Rating (4.5)</h6>
+                                <div class="iconbox d-flex align-items-center gap-2">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="ratvis_box">
+                                <h6>Happy Visitors</h6>
+                                <div class="visit_iocn_box">
+                                    <img src="./assets/images/Users_hotel.svg" alt="users">
+                                    <span class="visit_title">1500+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hotel card 2 -->
+                <div class="card hotel_card rounded-0 p-0">
+                    <img src="./assets/images/hans/hotel_hans.jpeg" class="card-img-top rounded-0 hotel_img" alt="...">
+                    <div class="card-body">
+                        <a href="./hotel_hans.html">
+                            <h5 class="card-title">Hotel Hans</h5>
+                        </a>
+                        <p class="card-text">Hotel Hans, Across Victory Tunnel, Circular Road, Shimla, Himachal Pradesh
+                            171002</p>
+                        <div class="rating_visit_box d-flex justify-content-between border-top">
+                            <div class="ratvis_box border-end">
+                                <h6>Rating (4.5)</h6>
+                                <div class="iconbox d-flex align-items-center gap-2">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="ratvis_box">
+                                <h6>Happy Visitors</h6>
+                                <div class="visit_iocn_box">
+                                    <img src="./assets/images/Users_hotel.svg" alt="users">
+                                    <span class="visit_title">1500+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hotel card 3 -->
+                <div class="card hotel_card rounded-0 p-0">
+                    <img src="./assets/images/hotel_nissar/room4.webp" class="card-img-top rounded-0 hotel_img" alt="...">
+                    <div class="card-body">
+                        <a href="./hotel_nissar.html">
+                            <h5 class="card-title">Hotel Nissar</h5>
+                        </a>
+                        <p class="card-text">Khayam, Dalgate Bridge, Near Khyber Hospital, Chinar Bagh, Srinagar, Jammu
+                            and Kashmir 190001</p>
+                        <div class="rating_visit_box d-flex justify-content-between border-top">
+                            <div class="ratvis_box border-end">
+                                <h6>Rating (4.5)</h6>
+                                <div class="iconbox d-flex align-items-center gap-2">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                    <img src="./assets/images/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="ratvis_box">
+                                <h6>Happy Visitors</h6>
+                                <div class="visit_iocn_box">
+                                    <img src="./assets/images/Users_hotel.svg" alt="users">
+                                    <span class="visit_title">1500+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our hotels section end -->
+
+    <!-- our services section start -->
+    <section class="our_service_sec py-5">
+        <div class="container">
+            <div class="row">
+                <div class="section_head_cont">
+                    <span class="sec_sub_title">OUR SERVICES</span>
+                    <h2 class="sec_title">Discover Our <span class="deco_head">SERVICES</span></h2>
+                </div>
+            </div>
+            <div class="row py-md-5 py-4">
+                <!-- service card 1 start -->
+                <div class="col-lg-4 mb-md-4 mb-3">
+                    <div class="card service_card">
+                        <div class="card-body">
+                            <div class="service_container">
+                                <div class="service_icon">
+                                    <img src="./assets/images/Restaurant.svg" alt="restaurant">
+                                </div>
+                                <div class="service_title">
+                                    <h5>Food & Restaurant</h5>
+                                </div>
+                                <div class="service_dsc">
+                                    <p>Enjoy delicious dishes that mix flavors from around the world, made with love and
+                                        served with excitement, celebrating different cultures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service card 1 end -->
+                <!-- service card 2 start -->
+                <div class="col-lg-4 mb-md-4 mb-3">
+                    <div class="card service_card">
+                        <div class="card-body">
+                            <div class="service_container">
+                                <div class="service_icon">
+                                    <img src="./assets/images/room_service.svg" alt="room service">
+                                </div>
+                                <div class="service_title">
+                                    <h5>Room Service</h5>
+                                </div>
+                                <div class="service_dsc">
+                                    <p>Enjoy 24/7 room service for dining, amenities, and travel assistance, ensuring a
+                                        seamless and memorable stay at our hotel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service card 2 end -->
+                <!-- service card 3 start -->
+                <div class="col-lg-4 mb-md-4 mb-3">
+                    <div class="card service_card">
+                        <div class="card-body">
+                            <div class="service_container">
+                                <div class="service_icon">
+                                    <img src="./assets/images/swimming.svg" alt="swimming">
+                                </div>
+                                <div class="service_title">
+                                    <h5>Sports & Gaming</h5>
+                                </div>
+                                <div class="service_dsc">
+                                    <p>Unleash excitement with our sports and gaming amenities, perfect for an
+                                        unforgettable stay filled with fun and thrills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service card 3 end -->
+                <!-- service card 4 start -->
+                <div class="col-lg-4 mb-3 mb-md-0">
+                    <div class="card service_card">
+                        <div class="card-body">
+                            <div class="service_container">
+                                <div class="service_icon">
+                                    <img src="./assets/images/Cheers.svg" alt="Cheers">
+                                </div>
+                                <div class="service_title">
+                                    <h5>Event & Party</h5>
+                                </div>
+                                <div class="service_dsc">
+                                    <p>Create unforgettable moments in our flexible event spaces, perfect for hosting
+                                        parties and gatherings tailored to your specifications.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service card 4 end -->
+                <!-- service card 5 start -->
+                <div class="col-lg-4 mb-3 mb-md-0">
+                    <div class="card service_card">
+                        <div class="card-body">
+                            <div class="service_container">
+                                <div class="service_icon">
+                                    <img src="./assets/images/Car Parking.svg" alt="car parking">
+                                </div>
+                                <div class="service_title">
+                                    <h5>Parking Area</h5>
+                                </div>
+                                <div class="service_dsc">
+                                    <p>Convenient private parking for up to 12 cars and tempo travelers, ensuring
+                                        hassle-free arrivals and departures during your stay.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service card 5 end -->
+                <!-- service card 6 start -->
+                <div class="col-lg-4">
+                    <div class="card service_card">
+                        <div class="card-body">
+                            <div class="service_container">
+                                <div class="service_icon">
+                                    <img src="./assets/images/Wifi.svg" alt="wifi">
+                                </div>
+                                <div class="service_title">
+                                    <h5>High Speed Wi-Fi</h5>
+                                </div>
+                                <div class="service_dsc">
+                                    <p>We ensure fast internet speeds with our high-performance Wi-Fi solutions,
+                                        delivering reliable connections for work and play.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service card 6 end -->
+            </div>
+        </div>
+    </section>
+    <!-- our services section end -->
+
+    <!-- testimonial section start -->
+    <section class="our_service_sec py-5">
+        <div class="container">
+            <div class="row">
+                <div class="section_head_cont">
+                    <span class="sec_sub_title">TESTIMONIALS</span>
+                    <h2 class="sec_title">What Our <span class="deco_head">Customer Say</span></h2>
+                </div>
+            </div>
+            <div class="row pt-5 testimonial_slider owl-carousel owl-theme" id="owl-carousel">
+                <div class="col-md-4 pt-5 item">
+                    <div class="card testimonial_card">
+                        <div class="card-body">
+                            <div class="testimonial_container">
+                                <div class="user_profile">
+                                    <img src="./assets/images/testimonial_user.png" alt="user">
+                                </div>
+                                <div class="user_name">
+                                    <h5>Jitendra</h5>
+                                </div>
+                                <div class="user_reviews">
+                                    <p class="mb-2">Awesome location, helpful staff, great service. It is located on the
+                                        circular road which is a busy street in shimla...</p>
+                                    <div class="iconbox d-flex align-items-center justify-content-center gap-2 mb-3">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-5 item">
+                    <div class="card testimonial_card">
+                        <div class="card-body">
+                            <div class="testimonial_container">
+                                <div class="user_profile">
+                                    <img src="./assets/images/testimonial_user.png" alt="user">
+                                </div>
+                                <div class="user_name">
+                                    <h5>Sunny Singh</h5>
+                                </div>
+                                <div class="user_reviews">
+                                    <p class="mb-2">It was very good experience, must visit at this hotel. Excellent
+                                        service good staffs and very cooperative. Food facilities were...</p>
+                                    <div class="iconbox d-flex align-items-center justify-content-center gap-2 mb-3">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-5 item">
+                    <div class="card testimonial_card">
+                        <div class="card-body">
+                            <div class="testimonial_container">
+                                <div class="user_profile">
+                                    <img src="./assets/images/testimonial_user.png" alt="user">
+                                </div>
+                                <div class="user_name">
+                                    <h5>Shaheen Praveen</h5>
+                                </div>
+                                <div class="user_reviews">
+                                    <p class="mb-2">Room are nice & clean good service and good staff, staff was
+                                        coprative trip facilities like kufri , narkanda also available...</p>
+                                    <div class="iconbox d-flex align-items-center justify-content-center gap-2 mb-3">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-12 text-center">
+                    <a href="https://www.google.co.in/travel/hotels/entity/CgoI88rw5t-LmsZoEAE/reviews?utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaIAoCGgASGhIUCgcI6A8QBBgTEgcI6A8QBBgUGAEyAhAAKgkKBToDSU5SGgA"
+                        class="btn btn_bgfill">View More Reviews</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section start -->
+
+    <!-- main footer section start -->
+    <footer class="main_footer mt-5">
+        <div class="container">
+            <div class="row flex-column align-content-center">
+                <a class="footer_logo mx-auto" href="./index.html">
+                    <img src="./assets/images/dev_rising_whitelogo.png" alt="" class="d-inline-block align-text-top">
+                </a>
+                <div class="hotel_detail_cont">
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#">info@devrising.com</a>
+                        <a href="#">9876543210</a>
+                    </div>
+                    <div class="address_container">
+                        <span class="address_box">
+                            Dev Rising Hotels And Resorts Pvt Ltd Hotel Hans, Near Victory Tunnel, Circular Road,
+                            Shimla, Himachal Pradesh 171003
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_navigation">
+                <nav class="navbar navbar-expand-lg justify-content-center">
+                    <ul class="navbar-nav list-unstyled ">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Terms & Condition</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copy_right_cont text-center">
+                <span class="copy_text">Copyright © 2024 All Rights Reserved. <span class="d-block">Design by <a
+                            href="#" class="company_link">EligoCS</a></span></span>
+            </div>
+        </div>
+    </footer>
+    <!-- main footer section end -->
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#owl-carousel').owlCarousel({
+            loop: true,
+            margin: 28,
+            dots: true,
+            nav: true,
+            items: 3,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    margin: 20,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    margin: 20,
+                    nav: true
+                }
+            }
+        });
+
+
+
+        $(".toggle_menu ").click(function () {
+            $(".header_navigation").toggle();
+        });
+
+        $("#select_guset").change(function () {
+            if ($(this).val() === "custom_choose") {
+                $(".addition_guest_container").show();
+            }
+            else {
+                $(".addition_guest_container").hide();
+            }
+        });
+
+        $(".add_room").click(function () {
+            let cloneRoom = $(".guest_option").first().clone();
+
+            // Calculate the room count
+            let room_count = $(".room_counter").length + 1;
+            console.log(room_count);
+
+            cloneRoom.find(".room_counter").text(room_count);
+
+            $(".guest_list").append(cloneRoom);
+            cloneRoom.find('.kids_age_note').remove();
+            cloneRoom.find('.guset_btn_box').append('<button class="btn rm_link_btn fs-6 text-muted remove_clone_btn">Remove</button>');
+
+            $(".remove_clone_btn").click(function () {
+                $(this).closest(".guest_option").remove();
+            });
+
+        });
+
+    });
+</script>
+
+</html>
